@@ -11,6 +11,7 @@
 
 @set PLINK_PROTOCOL=ssh
 @if not defined TERM set TERM=msys
+@if /I "%TERM%" equ "dumb" set TERM=msys
 
 @if "%1"=="gui" @goto gui
 
